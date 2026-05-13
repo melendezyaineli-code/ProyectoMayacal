@@ -14,14 +14,13 @@ import java.awt.Font;
 import javax.swing.JComboBox;
 import javax.swing.JTextPane;
 import javax.swing.JTextField;
+import javax.swing.JList;
+import javax.swing.JToolBar;
 
 public class Ventas extends JFrame {
 
 	private static final long serialVersionUID = 1L;
 	private JPanel contentPane;
-	private JTextField textCant;
-	private JTextField textField;
-	private JTextField textField_1;
 
 	/**
 	 * Launch the application.
@@ -44,7 +43,7 @@ public class Ventas extends JFrame {
 	 */
 	public Ventas() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 562, 451);
+		setBounds(100, 100, 562, 525);
 		contentPane = new JPanel();
 		contentPane.setBackground(new Color(136, 219, 247));
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
@@ -76,80 +75,107 @@ public class Ventas extends JFrame {
 		contentPane.add(btnAgre_Cliente);
 		
 		JButton btnNewButton_1 = new JButton("");
-		btnNewButton_1.setBounds(26, 82, 115, 84);
+		btnNewButton_1.setIcon(new ImageIcon("C:\\Users\\Yaineli\\Downloads\\Cal.png"));
+		btnNewButton_1.setBounds(26, 82, 115, 100);
 		contentPane.add(btnNewButton_1);
 		
 		JButton btnNewButton_1_1 = new JButton("");
-		btnNewButton_1_1.setBounds(212, 82, 115, 84);
+		btnNewButton_1_1.setIcon(new ImageIcon("C:\\Users\\Yaineli\\Downloads\\adhesivo.png"));
+		btnNewButton_1_1.setBounds(212, 82, 115, 100);
 		contentPane.add(btnNewButton_1_1);
 		
 		JButton btnNewButton_1_2 = new JButton("");
-		btnNewButton_1_2.setBounds(391, 82, 115, 84);
+		btnNewButton_1_2.setIcon(new ImageIcon("C:\\Users\\Yaineli\\Downloads\\Sin título.png"));
+		btnNewButton_1_2.setBounds(391, 82, 115, 100);
 		contentPane.add(btnNewButton_1_2);
 		
 		JLabel lblCal = new JLabel("Cal");
 		lblCal.setFont(new Font("Times New Roman", Font.ITALIC, 14));
-		lblCal.setBounds(26, 167, 46, 14);
+		lblCal.setBounds(26, 189, 46, 14);
 		contentPane.add(lblCal);
 		
-		JLabel lblCemento = new JLabel("Cemento");
+		JLabel lblCemento = new JLabel("Adhesivos");
 		lblCemento.setFont(new Font("Times New Roman", Font.ITALIC, 14));
-		lblCemento.setBounds(212, 167, 76, 14);
+		lblCemento.setBounds(212, 189, 76, 14);
 		contentPane.add(lblCemento);
 		
-		JLabel lblGrava = new JLabel("Grava");
+		JLabel lblGrava = new JLabel("Recubrimiento");
 		lblGrava.setFont(new Font("Times New Roman", Font.ITALIC, 14));
-		lblGrava.setBounds(391, 167, 46, 14);
+		lblGrava.setBounds(391, 189, 115, 14);
 		contentPane.add(lblGrava);
-		
-		JTextPane textPane = new JTextPane();
-		textPane.setBounds(26, 192, 115, 84);
-		contentPane.add(textPane);
-		
-		JTextPane textPane_1 = new JTextPane();
-		textPane_1.setBounds(212, 192, 115, 84);
-		contentPane.add(textPane_1);
-		
-		JTextPane textPane_2 = new JTextPane();
-		textPane_2.setBounds(391, 192, 115, 84);
-		contentPane.add(textPane_2);
 		
 		JButton btnSelec = new JButton("Seleccionar");
 		btnSelec.setBackground(new Color(0, 43, 85));
 		btnSelec.setForeground(new Color(255, 255, 255));
 		btnSelec.setFont(new Font("Times New Roman", Font.ITALIC, 14));
-		btnSelec.setBounds(212, 357, 115, 23);
+		btnSelec.setBounds(219, 433, 115, 23);
 		contentPane.add(btnSelec);
 		
 		JLabel lblNewLabel_1 = new JLabel("Cantidad");
 		lblNewLabel_1.setFont(new Font("Times New Roman", Font.ITALIC, 14));
-		lblNewLabel_1.setBounds(26, 287, 66, 27);
+		lblNewLabel_1.setBounds(26, 366, 66, 27);
 		contentPane.add(lblNewLabel_1);
 		
 		JLabel lblNewLabel_1_1 = new JLabel("Cantidad");
 		lblNewLabel_1_1.setFont(new Font("Times New Roman", Font.ITALIC, 14));
-		lblNewLabel_1_1.setBounds(212, 287, 66, 27);
+		lblNewLabel_1_1.setBounds(219, 366, 66, 27);
 		contentPane.add(lblNewLabel_1_1);
 		
 		JLabel lblNewLabel_1_2 = new JLabel("Cantidad");
 		lblNewLabel_1_2.setFont(new Font("Times New Roman", Font.ITALIC, 14));
-		lblNewLabel_1_2.setBounds(391, 287, 66, 27);
+		lblNewLabel_1_2.setBounds(383, 366, 66, 27);
 		contentPane.add(lblNewLabel_1_2);
 		
-		textCant = new JTextField();
-		textCant.setBounds(26, 308, 86, 20);
-		contentPane.add(textCant);
-		textCant.setColumns(10);
+		JComboBox comboBox = new JComboBox();
+		comboBox.setBounds(85, 369, 56, 22);
+		contentPane.add(comboBox);
 		
-		textField = new JTextField();
-		textField.setColumns(10);
-		textField.setBounds(212, 308, 86, 20);
-		contentPane.add(textField);
+		JComboBox comboBox_1 = new JComboBox();
+		comboBox_1.setBounds(278, 369, 56, 22);
+		contentPane.add(comboBox_1);
 		
-		textField_1 = new JTextField();
-		textField_1.setColumns(10);
-		textField_1.setBounds(391, 308, 86, 20);
-		contentPane.add(textField_1);
+		JComboBox comboBox_2 = new JComboBox();
+		comboBox_2.setBounds(450, 366, 56, 22);
+		contentPane.add(comboBox_2);
+		
+		JList list_1_1 = new JList();
+		list_1_1.setBounds(26, 265, 115, 67);
+		contentPane.add(list_1_1);
+		
+		JLabel lblNewLabel_1_3 = new JLabel("Tipo");
+		lblNewLabel_1_3.setFont(new Font("Times New Roman", Font.ITALIC, 14));
+		lblNewLabel_1_3.setBounds(10, 227, 66, 27);
+		contentPane.add(lblNewLabel_1_3);
+		
+		JComboBox comboBox_3 = new JComboBox();
+		comboBox_3.setBounds(46, 232, 95, 22);
+		contentPane.add(comboBox_3);
+		
+		JLabel lblNewLabel_1_3_1 = new JLabel("Tipo");
+		lblNewLabel_1_3_1.setFont(new Font("Times New Roman", Font.ITALIC, 14));
+		lblNewLabel_1_3_1.setBounds(196, 234, 66, 27);
+		contentPane.add(lblNewLabel_1_3_1);
+		
+		JLabel lblNewLabel_1_3_2 = new JLabel("Tipo");
+		lblNewLabel_1_3_2.setFont(new Font("Times New Roman", Font.ITALIC, 14));
+		lblNewLabel_1_3_2.setBounds(383, 234, 66, 27);
+		contentPane.add(lblNewLabel_1_3_2);
+		
+		JComboBox comboBox_3_1 = new JComboBox();
+		comboBox_3_1.setBounds(238, 230, 95, 22);
+		contentPane.add(comboBox_3_1);
+		
+		JComboBox comboBox_3_2 = new JComboBox();
+		comboBox_3_2.setBounds(417, 230, 95, 22);
+		contentPane.add(comboBox_3_2);
+		
+		JList list_1_1_1 = new JList();
+		list_1_1_1.setBounds(219, 265, 115, 67);
+		contentPane.add(list_1_1_1);
+		
+		JList list_1_1_2 = new JList();
+		list_1_1_2.setBounds(391, 265, 115, 67);
+		contentPane.add(list_1_1_2);
 
 	}
 }
