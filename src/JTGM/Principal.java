@@ -55,14 +55,14 @@ public class Principal extends JFrame {
 		contentPane.add(btnNewButton);
 		
 		JLabel lblNewLabel = new JLabel("Seleccione que acción desea realizar");
-		lblNewLabel.setFont(new Font("Times New Roman", Font.ITALIC, 23));
+		lblNewLabel.setFont(new Font("Times New Roman", Font.ITALIC, 24));
 		lblNewLabel.setBounds(5, 49, 441, 72);
 		contentPane.add(lblNewLabel);
 		
 		JButton btnProdu = new JButton("Agregar Producción");
 		btnProdu.setBackground(new Color(0, 43, 85));
 		btnProdu.setForeground(Color.WHITE);
-		btnProdu.setFont(new Font("Tahoma", Font.PLAIN, 11));
+		btnProdu.setFont(new Font("Times New Roman", Font.ITALIC, 14));
 		btnProdu.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				Produccion frame = new Produccion();
@@ -74,10 +74,11 @@ public class Principal extends JFrame {
 		});
 		
 		
-		btnProdu.setBounds(55, 147, 143, 55);
+		btnProdu.setBounds(55, 147, 161, 55);
 		contentPane.add(btnProdu);
 		
 		JButton btnVenta = new JButton("Hacer una Venta");
+		btnVenta.setFont(new Font("Times New Roman", Font.ITALIC, 14));
 		btnVenta.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				Ventas frame = new Ventas();
