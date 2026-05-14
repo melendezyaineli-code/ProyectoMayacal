@@ -13,6 +13,8 @@ import javax.swing.JLabel;
 import java.awt.Font;
 import javax.swing.JComboBox;
 import javax.swing.JTextField;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
 public class Produccion extends JFrame {
 
@@ -97,6 +99,10 @@ public class Produccion extends JFrame {
 		contentPane.add(comboTipo);
 		
 		JButton btnRegistrar = new JButton("Registrar");
+		btnRegistrar.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+			}
+		});
 		btnRegistrar.setForeground(new Color(255, 255, 255));
 		btnRegistrar.setBackground(new Color(0, 43, 85));
 		btnRegistrar.setBounds(119, 275, 89, 23);

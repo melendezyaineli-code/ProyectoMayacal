@@ -16,6 +16,8 @@ import javax.swing.JTextPane;
 import javax.swing.JTextField;
 import javax.swing.JList;
 import javax.swing.JToolBar;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
 public class Ventas extends JFrame {
 
@@ -176,6 +178,21 @@ public class Ventas extends JFrame {
 		JList list_1_1_2 = new JList();
 		list_1_1_2.setBounds(391, 265, 115, 67);
 		contentPane.add(list_1_1_2);
+		
+		JButton btnCorte = new JButton("Corte");
+		btnCorte.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				Corte frame = new Corte();
+				frame.setVisible(true);
+				frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+				
+			}
+		});
+		btnCorte.setForeground(Color.WHITE);
+		btnCorte.setFont(new Font("Times New Roman", Font.ITALIC, 14));
+		btnCorte.setBackground(new Color(0, 43, 85));
+		btnCorte.setBounds(431, 0, 115, 23);
+		contentPane.add(btnCorte);
 
 	}
 }
