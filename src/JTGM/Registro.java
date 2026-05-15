@@ -34,6 +34,6 @@ public class Registro {
 	
 	public Registro () {
 		
+		
 	}
-	
 }

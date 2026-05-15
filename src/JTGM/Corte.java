@@ -102,6 +102,10 @@ public class Corte extends JFrame {
 		lblNewLabel_1.setBounds(303, 11, 89, 27);
 		contentPane.add(lblNewLabel_1);
 		
+		JTextPane textPane = new JTextPane();
+		textPane.setBounds(10, 125, 414, 112);
+		contentPane.add(textPane);
+		
 
 	}
 }

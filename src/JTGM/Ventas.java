@@ -23,6 +23,7 @@ public class Ventas extends JFrame {
 
 	private static final long serialVersionUID = 1L;
 	private JPanel contentPane;
+	private JButton btnSelec;
 
 	/**
 	 * Launch the application.
@@ -106,7 +107,18 @@ public class Ventas extends JFrame {
 		lblGrava.setBounds(391, 189, 115, 14);
 		contentPane.add(lblGrava);
 		
-		JButton btnSelec = new JButton("Seleccionar");
+		btnSelec = new JButton("Seleccionar");
+		btnSelec.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+			btnSelec.addActionListener(this);
+			Ticket frame = new Ticket();
+			frame.setVisible(true);
+			frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+			
+			
+			
+			}
+		});
 		btnSelec.setBackground(new Color(0, 43, 85));
 		btnSelec.setForeground(new Color(255, 255, 255));
 		btnSelec.setFont(new Font("Times New Roman", Font.ITALIC, 14));
