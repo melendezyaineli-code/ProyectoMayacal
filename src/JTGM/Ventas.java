@@ -74,6 +74,13 @@ public class Ventas extends JFrame {
 		contentPane.add(comboCliente);
 		
 		JButton btnAgre_Cliente = new JButton("+");
+		btnAgre_Cliente.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				Clientes frame = new Clientes();
+				frame.setVisible(true);
+				frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+			}
+		});
 		btnAgre_Cliente.setBounds(219, 49, 41, 23);
 		contentPane.add(btnAgre_Cliente);
 		

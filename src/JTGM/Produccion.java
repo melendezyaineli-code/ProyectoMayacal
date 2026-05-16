@@ -76,6 +76,13 @@ public class Produccion extends JFrame {
 		contentPane.add(lblNewLabel_1_1);
 		
 		JButton btnAgre_Produ = new JButton("+");
+		btnAgre_Produ.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				Productos frame = new Productos();
+				frame.setVisible(true);
+				frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+			}
+		});
 		btnAgre_Produ.setBounds(227, 104, 41, 23);
 		contentPane.add(btnAgre_Produ);
 		

@@ -107,6 +107,13 @@ public class Ticket extends JFrame {
 		textTotal.setColumns(10);
 		textTotal.setBounds(338, 252, 86, 20);
 		contentPane.add(textTotal);
+		
+		JButton btnImprimir = new JButton("Imprimir en Word");
+		btnImprimir.setForeground(new Color(255, 255, 255));
+		btnImprimir.setBackground(new Color(0, 64, 128));
+		btnImprimir.setFont(new Font("Times New Roman", Font.ITALIC, 14));
+		btnImprimir.setBounds(10, 219, 144, 23);
+		contentPane.add(btnImprimir);
 
 	}
 }
